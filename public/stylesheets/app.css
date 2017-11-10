@@ -1,1 +1,28 @@
-head{color: orange;}
+header {
+    background-color: #ff9966;
+    color: #ffffcc;
+    font-family: inherit
+}
+
+body {
+    background-color: Whitesmoke;
+    color: #6dc3dc
+    ;
+}
+main {
+    background: white;
+    padding: 16px;
+}
+main {
+    width: 450px;
+    margin: 0 auto;
+}
+h2 { 
+    color: #6dc3dc
+}
+.post {
+    margin-bottom: 48px
+}
+.post .user-info img {
+    border-radius: 50%;
+}
