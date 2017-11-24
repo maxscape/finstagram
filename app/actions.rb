@@ -1,18 +1,3 @@
-get '/' do 
-     #if the time_ago_in_minutes is more than 60
-    if time_ago_in_minutes >= 60
-        # return this string
-        "#{time_ago_in_minutes / 60} more than an hour ago"
-    elsif time_ago_in_minutes == 60
-        "an hour"
-    #if it's less than or equal
-    else
-        #return this instead
-        "#{time_ago_in_minutes} minutes ago"
-    end
-    erb :index
-end
-
 def humanized_time_ago(time_ago_in_minutes)
   if time_ago_in_minutes == 60
     "#{time_ago_in_minutes / 60} hours ago"
@@ -62,8 +47,7 @@ get '/' do
   }
 
     
-  @posts = [@post_shark, @post_whale, @post_marlin].to_s
-    
+  @posts = [@post_shark, @post_whale, @post_marlin]
     erb (:index)
 end
 
