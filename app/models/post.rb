@@ -14,6 +14,15 @@ class Post < ActiveRecord::Base
       "#{time_ago_in_minutes.to_i} minutes ago"
     end
   end
+  
+  def like_count
+    self.likes.size
+  end
+  
+  def comment_count
+    self.comments.size
+  end
+  
 
 end
 
